@@ -1,0 +1,267 @@
+@font-face {
+    font-family: Noodles-Regular;
+    src: url("../src/fonts/Noodles-Regular.ttf");
+}
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-1;
+}
+body{
+    margin: 0;
+    height: auto;
+    position: relative;
+}
+header{
+    height: 4rem;
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 4fr 1fr;
+    background-color: gainsboro;
+}
+.logo{
+    height: 4rem;
+    display: flex;
+    gap: 2px;
+}
+#contentContacts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; 
+}
+#contentContacts a{
+    padding-bottom: 20%;
+    width: 20%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+header img{ 
+    mix-blend-mode: color-burn;
+    border-radius: 50%;
+    border: 2px solid;
+    padding: 5px;
+}
+main{
+    background-repeat: no-repeat;
+    height: 35rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    position: relative;
+}
+.containerRigth{
+    border-radius: 5%;
+    background-color: gray;
+    box-shadow: 3px 3px 10px 2px;
+    opacity: 0.9;
+    height: 90%;
+    width: 90%;
+    max-width: 400px;
+    margin: 5%;
+    animation-name: scaleY;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    overflow-y: hidden;
+    background: linear-gradient(black, gray);
+    display: none;
+
+}
+
+    @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .container{
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .loading{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #f3f3f3; 
+        border-top: 10px solid red;
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+        animation: spin 2s linear infinite;
+        margin: 0 auto;
+      
+}
+#text{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-duration: 70s;
+    animation-fill-mode: backwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: 1rem;
+    z-index: 1;
+}
+#cLeft{
+    border-radius: 5%;
+    background-color: gray;
+    opacity: 0.9;
+    box-shadow: 3px 3px 10px 2px;
+    height: 90%;
+    width: 90%;
+    max-width: 400px;
+    margin: 5%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: linear-gradient(black, gray);
+    animation-name: scaleY;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    overflow-y: hidden;
+}
+.btnDiv{
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.btnDiv img{
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.btn{
+    background-color: black;
+    color: white;
+}
+.containerLeft button{
+    border-radius: 10%;
+    cursor: pointer;
+    width: 50%;
+    padding-bottom: 2%;
+    box-shadow: 3px 3px 10px 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100%;
+    overflow: hidden;
+}
+button:hover{
+    background-color: lightskyblue;
+    cursor: pointer;
+}
+footer{
+    background-color: gainsboro;
+    height: 4rem;
+
+}
+footer p{
+    text-align: center;
+    opacity: 0.5;
+    margin: 0;
+    padding-top: 1.5rem;
+}
+#contentAboutMe{
+    padding: 3.5rem 0 0 0;
+    display: grid;
+    justify-items: center;
+}
+#contentProjects{
+    gap: 1rem;
+    margin: 2rem;
+    display: grid;
+    justify-items: center;
+}
+.profile{
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px 2px;
+    position:static;
+    z-index: 2;
+}
+#projectDescription{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 1px 10px 1px 10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    height: 20%;
+    overflow: auto;
+}
+figure{
+    text-align: center;
+    height: 20rem;
+}
+#projectImg{
+    height: 15rem;
+    width: 15rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.emphasis{
+    color: red;
+}
+#title{
+    background: linear-gradient(black, gray);
+    padding: 1rem;
+    border-radius: 10%;
+    box-shadow: 0px 1px 5px 1px black;
+    text-shadow: 0 0 0 #fff;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    z-index:2;
+}
+@keyframes visibleR{
+    0%{
+        transform: scaleY(0);     
+    }100%{
+        transform: scaleY(1);
+    }
+
+}
+@keyframes hiddenR {
+    0%{
+        transform: scaleY(1);     
+    }100%{
+        transform: scaleY(0);
+    }
+}
+@keyframes textUp{
+    to{
+            transform: translateY(-100%);
+    }
+}

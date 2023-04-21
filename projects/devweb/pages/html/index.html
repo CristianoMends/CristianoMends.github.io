@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre HTML</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>        
+    </header>
+    <main>
+        <section>
+                        <h1>HTML</h1>
+            <select id="atalho" onchange="goSection()">
+                <option value="">Selecione</option>
+                <option value="#estrutura">Estrutura básica</option>
+                <option value="#tags">Tags</option>
+                <option value="#atributos">Atributos</option>
+                <option value="#cssejs">Css e JavaScript</option>
+            </select>
+            <section id="estrutura">
+                <h2>Estrutura básica do HTML</h2>
+                <p>
+                    Todo documento HTML começa com uma declaração que define o tipo de 
+                    documento e é seguida pela tag &lt;html&gt; que envolve todo o conteúdo 
+                    da página. O &lt;html&gt; é então dividido em duas seções: &lt;head&gt; e 
+                    &lt;body&gt;. A seção &lt;head&gt; contém informações sobre a página, como o 
+                    título e os metadados, enquanto a seção &lt;body&gt; contém todo o 
+                    conteúdo que será exibido na página. Aqui está um exemplo de 
+                    estrutura básica do HTML:
+                </p>
+
+                <p id="ex">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;title&gt;Minha primeira página HTML&lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;h1&gt;Bem-vindo ao meu site!&lt;/h1&gt;<br>
+                    &lt;p&gt;Este é um exemplo de um parágrafo HTML.&lt;/p&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                </p>
+            </section>
+            <section id="tags">
+                <h2>Tags HTML</h2>
+                <p>
+                    As tags HTML são os blocos de construção do HTML e são usadas 
+                    para definir o conteúdo e a estrutura da página. As tags são 
+                    escritas entre colchetes angulares <> e são geralmente usadas 
+                    em pares, com uma tag de abertura &lt;tag> e uma tag de fechamento                        
+                    &lt;/tag>. Algumas tags HTML comuns são:
+                </p>
+                <p id="ex">
+                        &lt;h1> a &lt;h6>: tags de cabeçalho que definem títulos e subtítulos de diferentes níveis. <br>
+                        &lt;p>: tag de parágrafo que define um bloco de texto.<br>
+                        &lt;a>: tag de âncora que cria um link para outra página ou recurso.<br>
+                        &lt;img>: tag de imagem que exibe uma imagem na página.<br>
+                        &lt;ul> e &lt;li>: tags de lista que criam uma lista não ordenada.<br>
+                        &lt;ol> e &lt;li>: tags de lista que criam uma lista ordenada.<br>
+                        &lt;div>: tag de divisão que define um contêiner para outros elementos HTML.<br>
+                        &lt;span>: tag de span que define uma seção de texto dentro de um bloco de texto.<br>
+                </p>    
+            </section>
+            <section id="atributos">
+                <h2>Atributos HTML</h2>
+                <p>
+                    Os atributos HTML são usados para fornecer informações adicionais sobre as 
+                    tags HTML. Eles são escritos dentro das tags e geralmente possuem um nome 
+                    e um valor. Alguns atributos comuns são:
+                </p>
+                <p id="ex">
+                    href: usado na tag &lt;a> para especificar o URL da página ou recurso vinculado.
+                    src: usado na tag &lt;img> para especificar o URL da imagem a ser exibida.
+                    alt: usado na tag &lt;img> para especificar o texto alternativo para a imagem, que é exibido caso a imagem não possa ser carregada.
+                    class e id: usados em várias tags HTML para identificar e estilizar elementos específicos da página.
+                </p>
+            </section>
+            <section id="cssejs">
+                <h2>CSS e JavaScript</h2>
+                <p>
+                    O HTML é apenas uma parte da criação de uma página web. Para estilizar e 
+                    adicionar interatividade à página, você também precisará de CSS (Cascading 
+                    Style Sheets) e JavaScript. O CSS é usado para estilizar o layout e o design 
+                    da página, enquanto o JavaScript é usado para adicionar interatividade e 
+                    funcionalidade à página.
+                </p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2023 Cristiano Mendes, Todos os direitos reservados</p>
+        
+    </footer>
+</body>
+</html>

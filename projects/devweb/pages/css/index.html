@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Css</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <section>
+            <h1>Css</h1>
+            <select id="atalho" onchange="goSection()">
+                <option value="">Selecione</option>
+                <option value="#seletores">Seletore de Css</option>
+                <option value="#propriedades">Propriedades Css</option>
+                <option value="#cascataeespecificidade">Cascata e Especificidade</option>
+                <option value="#conclusao">Conclusão</option>
+            </select>
+            <section id="seletores">
+                <h2>Seletores CSS</h2>
+                <p>
+                    Os seletores CSS são usados para selecionar elementos HTML e aplicar
+                    estilos a eles. Existem vários tipos de seletores CSS, incluindo:
+                </p>
+                <h3>
+                    Seletor de Elemento
+                </h3>
+                <p>
+                    O seletor de elemento é usado para selecionar todos os elementos de um
+                    determinado tipo. Por exemplo, para selecionar todos os parágrafos em
+                    um documento HTML, use o seletor p. Aqui está um exemplo:
+                </p>
+                <p class="ex">
+                    p {<br>
+                    font-size: 16px;<br>
+                    } <br>
+                </p>
+                <p>
+                    Isso definirá o tamanho da fonte de todos os parágrafos no documento como 16 pixels.
+                </p>
+                <h3>
+                    Seletor de Classe
+                </h3>
+                <p>
+                    O seletor de classe é usado para selecionar elementos que têm uma classe específica
+                    atribuída a eles. Para definir uma classe CSS, use um ponto antes do nome da classe.
+                    Aqui está um exemplo:
+                </p>
+                <p class="ex">
+                    .minha-classe {<br>
+                    color: blue;<br>
+                    } <br>
+                </p>
+                <p>
+                    Isso definirá a cor do texto para azul em todos os elementos que possuem a classe
+                    minha-classe. Para aplicar essa classe a um elemento HTML, adicione o atributo
+                    class com o nome da classe ao elemento:
+                </p>
+                <p class="ex">
+                    &lt;p class="minha-classe">Este parágrafo terá texto azul.&lt;/p>
+                </p>
+                <h3>
+                    Seletor de ID
+                </h3>
+                <p>
+                    O seletor de ID é usado para selecionar um elemento HTML específico com um ID atribuído
+                    a ele. Para definir um ID CSS, use uma hashtag antes do nome do ID. Aqui está um
+                    exemplo:
+                </p>
+                <p class="ex">
+                    #meu-id {<br>
+                    background-color: yellow;<br>
+                    }<br>
+                </p>
+                <p>
+                    Isso definirá a cor de fundo como amarelo para o elemento com o ID meu-id. Para aplicar
+                    esse ID a um elemento HTML, adicione o atributo id com o nome do ID ao elemento:
+                </p>
+                <p class="ex">
+                    &lt;div id="meu-id">Este elemento terá um fundo amarelo.&lt;/div>
+                </p>
+            </section>
+            <section id="propriedades">
+                <h2>
+                    Propriedades CSS
+                </h2>
+                <p>
+                    As propriedades CSS são usadas para definir o estilo de um elemento HTML. Existem
+                    muitas propriedades CSS disponíveis, incluindo:
+                </p>
+                <h3>
+                    Cor
+                </h3>
+                <p>
+                    A propriedade color é usada para definir a cor do texto em um elemento HTML.
+                    Aqui está um exemplo:
+                </p>
+                <p class="ex">
+                    p {<br>
+                    color: red;<br>
+                    } <br>
+                </p>
+                <p>
+                    Isso definirá a cor do texto em todos os parágrafos no documento como vermelho.
+                </p>
+                <h3>
+                    Fundo
+                </h3>
+                <p>
+                    A propriedade background-color é usada para definir a cor de fundo de um elemento
+                    HTML. Aqui está um exemplo:
+                </p>
+                <p>
+                    body {<br>
+                    background-color: gray;<br>
+                    } <br>
+                </p>
+                <p>
+                    Isso definirá a cor de fundo da página inteira como cinza.
+                </p>
+                <h3>
+                    Margem
+                </h3>
+                <p>
+                    A propriedade margin é usada para definir a margem de um elemento HTML.
+                    Aqui está um exemplo:
+                </p>
+                <p class="ex">
+                    p {<br>
+                    margin: 10px;<br>
+                    } <br>
+                </p>
+                <p>
+                    Isso definirá uma margem de 10 pixels em todos os lados de todos os
+                    parágrafos no documento.
+                </p>
+                <h3>
+                    Preenchimento
+                </h3>
+                <p>
+                    A propriedade padding é usada para definir o preenchimento interno de
+                    um elemento HTML. Aqui está um exemplo:
+                </p>
+                <p class="ex">
+                    div {<br>
+                    padding: 20px;<br>
+                    } <br>
+                </p>
+                <p>
+                    Isso definirá um preenchimento interno de 20 pixels em todos os lados
+                    de todos os elementos div no documento.
+                </p>
+                <h3>
+                    Tamanho da Fonte
+                </h3>
+                <p>
+                    A propriedade font-size é usada para definir o tamanho da fonte em um
+                    elemento HTML. Aqui está um exemplo:
+                </p>
+                <p class="ex">
+                    h1 {<br>
+                    font-size: 36px;<br>
+                    } <br>
+                </p>
+                <p>
+                    Isso definirá o tamanho da fonte do título h1 como 36 pixels.
+                </p>
+                <h3>
+                    Largura e Altura
+                </h3>
+                <p>
+                    As propriedades width e height são usadas para definir a largura e a
+                    altura de um elemento HTML, respectivamente. Aqui está um exemplo:
+                </p>
+                <p class="ex">
+                    img {<br>
+                    width: 200px;<br>
+                    height: 150px;<br>
+                    } <br>
+                </p>
+                <p>
+                    Isso definirá a largura da imagem como 200 pixels e a altura como 150 pixels.
+                </p>
+            </section>
+            <section id="cascataeespecificidade">
+                <h2>
+                    Cascata e Especificidade
+                </h2>
+                <p>
+                    A cascata e a especificidade são dois conceitos importantes no CSS. <br>
+                    A cascata refere-se à ordem em que as regras CSS são aplicadas a um elemento. <br>
+                    A especificidade refere-se ao grau de importância de um seletor CSS. <br>
+                </p>
+                <p>
+                    Por exemplo, se você tiver duas regras CSS para o mesmo elemento:
+                </p>
+                <p class="ex">
+                    p {<br>
+                    color: blue;<br>
+                    } <br>
+                    <br>
+                    #meu-id { <br>
+                    color: red; <br>
+                    } <br>
+                </p>
+                <p>
+                    A regra para o seletor #meu-id terá mais especificidade do que a regra para o seletor
+                    p, portanto, a cor do texto no elemento com o ID meu-id será vermelha.
+                </p>
+                <section id="conclusao">
+                    <h2>
+                        Conclusão
+                    </h2>
+                    <p>
+                        O CSS é uma linguagem de estilo poderosa que permite definir a aparência de elementos
+                        HTML em uma página da web. Com seletores e propriedades CSS, você pode criar estilos
+                        personalizados para todos os elementos em sua página da web. Entender a cascata e a
+                        especificidade é fundamental para garantir que suas regras CSS sejam aplicadas
+                        corretamente. Espero que este guia tenha sido útil!
+                    </p>
+                </section>
+
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2023 Cristiano Mendes, Todos os direitos reservados</p>
+
+    </footer>
+</body>
+
+</html>
