@@ -1,6 +1,6 @@
 
 function openPanelR() {
-    document.getElementById("cRigth").style.display = "block";
+    document.getElementById("cRigth").style.display = "flex";
     document.getElementById("text").style.animationName = "textUp";
     document.getElementById("cRigth").style.animationName = "visibleR";
  }

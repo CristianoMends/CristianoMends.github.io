@@ -20,11 +20,17 @@ function showProjectDesc() {
       pode aprender passo a passo como essas linguagens funcionam e como elas 
       podem ser aplicadas na criação de páginas da web.
       `;
-    }else if (selectedValue === "..."){
-      projectImg.style.backgroundImage = "url(src/images/projects/embreve.png)";
-      document.getElementById("projectDescription").innerText = "Mais projetos em breve";
-    }else{
-    }
+    }else if(selectedValue === "jogodavelha"){
+        projectImg.style.backgroundImage = "url(src/images/projects/jogodavelha.png)";
+        document.getElementById("projectDescription").innerText = `Este jogo foi desenvolvido 
+        com linguagens Java e kotlin para android`;
+  }else if (selectedValue === "..."){
+    projectImg.style.backgroundImage = "url(src/images/projects/embreve.png)";
+    document.getElementById("projectDescription").innerText = "Mais projetos em breve";
+
+  }else{
+    
+}
   };
 
 function openProject() {
@@ -41,7 +47,7 @@ function openProject() {
         document.getElementById("cRigth").innerHTML = loading;
         setTimeout(function () {
             window.location.href = "projects/IMC/index.html";
-        }, 5000);
+        }, 1000);
 
     } else if (selectedValue === "devweb") {
         const loading = `
@@ -52,9 +58,20 @@ function openProject() {
         document.getElementById("cRigth").innerHTML = loading;
         setTimeout(function () {
             window.location.href = "projects/devweb/index.html";
-        }, 5000);
+        }, 1000);
     } else if (selectedValue === "...") {
         alert("Em breve, mais projetos...");
+
+    }else if(selectedValue === "jogodavelha"){
+        const loading = `
+        <div class="container">
+        <div class="loading"></div>
+        </div>
+    `;
+        document.getElementById("cRigth").innerHTML = loading;
+        setTimeout(function () {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.mendesgames.jogodavelha";
+        }, 1000);
 
     } else {
         alert("Selecione um projeto!");
