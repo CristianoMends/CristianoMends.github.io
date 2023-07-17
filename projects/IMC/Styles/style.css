@@ -9,6 +9,7 @@ body{
 }
 main{
   height: 100%;
+  width: 100vw;
   padding: 0 1rem 0 1rem;
   background-image: url("../src/images/background.jpg");
   background-size: cover;
@@ -22,6 +23,9 @@ main p{
   text-align: center;
 }
 .containers{
+  height: 50vw;
+  width: 100vw;
+  margin-right: 10rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -29,9 +33,9 @@ main p{
 }
 header{
   display: flex;
+  width: 100vw;
   justify-content: center;
   align-items: center;
-  background: lightblue;
 }
 
 .container{
@@ -49,22 +53,23 @@ header{
   box-shadow: 5px 5px 10px 1px ;
   background-color: #fff;
   border-radius: 5px;
+  height: 100%;
+  width: 50%;  
   max-width: 30rem;
   min-width: 16rem;
-  width: 40%;
   display: none;
-  height: 30rem;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
   position: relative;
-
   animation-name: resultImc;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+
 }
   img{
-    height: 200px;
+    width: 25%;
+    height: 40%;
   }
   .imc{
     background-color: red;
@@ -127,7 +132,10 @@ input[type="radio"]:checked + label {
   background-color: lightblue;
 }
 footer{
-  background: lightblue;  
+  position: absolute;
+  bottom: 0px;
+  height: 3rem;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
