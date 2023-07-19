@@ -16,17 +16,18 @@
         
         
     </header>
-    <main>
-            <video autoplay loop muted>
-                <source src="src/images/background.mp4" type="video/mp4">
-            </video>
-            <div class="btnDiv">
-                <button class="btn" onclick="openPanelL()">...</button>
-                <img id="img" src="src/images/hand.png" alt="" height="60px" width="60px">
-            </div>
-	<section class="welcome" id="welcome">
+    <video autoplay loop muted>
+        <source src="src/images/background.mp4" type="video/mp4">
+    </video>
+    <div class="btnDiv">
+        <button class="btn" onclick="openPanelL()">...</button>
+        <img id="img" src="src/images/hand.png" alt="" height="60px" width="60px">
+    </div>
+    <section class="welcome" id="welcome" style="height: 100%;width: 100%;display: flex;justify-content: center;align-items: center;">
 		<h1>Bem Vindo</h1>
-	</section>	
+	</section>
+    <main>
+            	
         <section class="containerLeft" id="cLeft" style="display: none;">
                 <button id="btn1"
                 onclick="openPanelR();showContentAboutMe()"

@@ -6,16 +6,33 @@ function openPanelR() {
  }
  function openPanelL(){
     let cLeft = document.getElementById("cLeft").style.display;
+    let welcome = document.getElementById("welcome").style.display
+
+    if (welcome === "none") {
+        setTimeout(function() {
+            document.getElementById("welcome").style.display = "flex";
+            document.getElementById("welcome").style.animationName = "visibleR";
+        }, 1000);
+        
+
+    }else if (welcome === "flex") {
+        document.getElementById("welcome").style.animationName = "hiddenR";
+        setTimeout(function() {
+            document.getElementById("welcome").style.display = "none";
+        }, 1000);
+    }
 
     if (cLeft === "none") {
         document.getElementById("img").style.display = "none";
-        document.getElementById("cLeft").style.display = "flex";
-        document.getElementById("cLeft").style.animationName = "visibleR";
+        setTimeout(function() {
+            document.getElementById("cLeft").style.display = "flex";
+            document.getElementById("cLeft").style.animationName = "visibleR";
+        }, 1000);        
 
     }else if (cLeft === "flex") {
+        document.getElementById("img").style.display = "block";
         document.getElementById("cLeft").style.animationName = "hiddenR";
         document.getElementById("cRigth").style.animationName = "hiddenR";
-        document.getElementById("img").style.display = "block";
         setTimeout(function() {
             document.getElementById("cLeft").style.display = "none";
             document.getElementById("cRigth").style.display = "none";
