@@ -25,7 +25,7 @@ function showProjectDesc() {
         document.getElementById("projectDescription").innerText = `Este jogo foi desenvolvido 
         com linguagens Java e kotlin para android`;
   }else if(selectedValue === "mediaplayer"){
-        projectImg.style.backgroundImage = "url(src/images/projects/mediaplayer.png)";
+        projectImg.style.backgroundImage = "url(src/images/projects/Screenshot_20230719-112854[1].png)";
         document.getElementById("projectDescription").innerText = `Este jogo foi desenvolvido 
         com linguagem kotlin para android`;        
   }else if (selectedValue === "..."){
