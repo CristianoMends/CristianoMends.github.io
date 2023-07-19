@@ -24,6 +24,10 @@ function showProjectDesc() {
         projectImg.style.backgroundImage = "url(src/images/projects/jogodavelha.png)";
         document.getElementById("projectDescription").innerText = `Este jogo foi desenvolvido 
         com linguagens Java e kotlin para android`;
+  }else if(selectedValue === "mediaplayer"){
+        projectImg.style.backgroundImage = "url(src/images/projects/mediaplayer.png)";
+        document.getElementById("projectDescription").innerText = `Este jogo foi desenvolvido 
+        com linguagem kotlin para android`;        
   }else if (selectedValue === "..."){
     projectImg.style.backgroundImage = "url(src/images/projects/embreve.png)";
     document.getElementById("projectDescription").innerText = "Mais projetos em breve";
@@ -70,10 +74,20 @@ function openProject() {
     `;
         document.getElementById("cRigth").innerHTML = loading;
         setTimeout(function () {
-            window.location.href = "https://play.google.com/store/apps/details?id=com.mendesgames.jogodavelha";
+            window.location.href = "https://github.com/CristianoMends/Jogo-Da-Velha-Android";
         }, 1000);
 
-    } else {
+    }else if(selectedValue === "mediaplayer"){
+        const loading = `
+        <div class="container">
+        <div class="loading"></div>
+        </div>
+    `;
+        document.getElementById("cRigth").innerHTML = loading;
+        setTimeout(function () {
+            window.location.href = "https://github.com/CristianoMends/MusicPlayer-Android";
+        }, 1000);
+    }else {
         alert("Selecione um projeto!");
     }
 
