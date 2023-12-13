@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio Cristiano Mendes</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="script/script.js"></script>
 </head>
 <body>  
     <video autoplay loop muted>
@@ -37,28 +36,6 @@
             </div>
         <p>&copy; 2023 Cristiano Mendes</p>
     </footer>
-    <script>
-        let slideAtual = 0;
-        exibirSlide(slideAtual);
-    
-        function mudarSlide(n) {
-          exibirSlide(slideAtual += n);
-        }
-    
-        function exibirSlide(n) {
-          const slides = document.getElementsByClassName("imagem-slide");
-          if (n >= slides.length) { slideAtual = 0; }
-          if (n < 0) { slideAtual = slides.length - 1; }
-          
-          for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slides[slideAtual].style.display = "block";
-        }
-    
-        setInterval(function() {
-          mudarSlide(1);
-        }, 3000);
-      </script>
+    <script src="script/script.js"></script>
 </body>
 </html>

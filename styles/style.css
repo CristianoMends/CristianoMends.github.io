@@ -33,19 +33,19 @@ header{
     
 }
 header .nome{
-    animation: move1 5s infinite;
+    animation: move1 15s linear infinite;
 }
 header .sobrenome{
-    animation: move2 5s linear both infinite;
+    animation: move2 15s linear infinite;
 }
 @keyframes move1 {
     50%{
-        transform: translateX(-25px) translateX(10px) rotateX(25deg) rotateY(10deg) rotateZ(0deg);    
+        transform: translateX(-5px) translateY(-5px) rotateX(25deg) rotateY(10deg) rotateZ(0deg);    
     }
 }
 @keyframes move2 {
     50%{
-        transform: translateX(25px) translateX(10px) rotateX(25deg) rotateY(10deg) rotateZ(0deg);    
+        transform: translateX(5px) translateY(5px) rotateX(25deg) rotateY(10deg) rotateZ(0deg);    
     }
   }
 header h1{
